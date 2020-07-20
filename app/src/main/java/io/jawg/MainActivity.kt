@@ -42,5 +42,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, CustomStyleActivity::class.java)
             startActivity(intent)
         }
+
+        buttonToAddAMarker.setOnClickListener {
+            val intent = Intent(this, MarkerMapActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
