@@ -16,7 +16,7 @@ class CustomStyleActivity: AppCompatActivity() {
      * To get one see https://jawg/io/docs/maps#get-custom-style-id
      * Or go to https://jawg.io/lab/styles to create one directly.
      */
-    private var styleId: String = ""
+    private var styleId: String = "YOUR_CUSTOM_STYLE_ID"
 
     // Returns the Jawg url depending on the style given
     // See /res/values/strings which contains the url and your access token.
