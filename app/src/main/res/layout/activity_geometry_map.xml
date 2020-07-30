@@ -12,6 +12,6 @@
         mapbox:mapbox_cameraTargetLng="2.34"
         mapbox:mapbox_cameraZoom="10"
         mapbox:mapbox_uiLogo="false"
-        mapbox:mapbox_uiAttribution="false"/>
+        mapbox:mapbox_uiAttribution="true"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
