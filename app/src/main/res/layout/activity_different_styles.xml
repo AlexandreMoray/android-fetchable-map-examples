@@ -25,7 +25,7 @@
             mapbox:mapbox_cameraTargetLng="-73.99155"
             mapbox:mapbox_cameraZoom="11"
             mapbox:mapbox_uiLogo="false"
-            mapbox:mapbox_uiAttribution="false"/>
+            mapbox:mapbox_uiAttribution="true"/>
 
     </LinearLayout>
 

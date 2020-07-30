@@ -45,7 +45,8 @@ class PopupMapActivity : AppCompatActivity() {
         mapView?.getMapAsync { map ->
             map.setStyle(makeStyleUrl()) { style ->
                 // Map fully loaded in this scope.
-
+                //Attributions position
+                map.uiSettings.setAttributionMargins(15,0,0,15)
                 // Add an icons ("classic" and "selected") to the map style.
                 val selectedMarkerIconDrawable = ResourcesCompat.getDrawable(this.resources, R.drawable.ic_marker_green, null)
                 style.addImage(MARKER_ICON, BitmapUtils.getBitmapFromDrawable(selectedMarkerIconDrawable)!!)

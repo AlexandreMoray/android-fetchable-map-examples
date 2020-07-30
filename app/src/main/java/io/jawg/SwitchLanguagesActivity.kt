@@ -53,6 +53,9 @@ class SwitchLanguagesActivity: AppCompatActivity(), AdapterView.OnItemSelectedLi
     // Behavior on item selection in the spinner.
     override fun onItemSelected(parent: AdapterView<*>, view: View, pos: Int, id: Long) {
         mapView?.getMapAsync{ map ->
+            //Attributions position
+            map.uiSettings.setAttributionMargins(15,0,0,15)
+
             // We udate the map style using the value selected from the spinner.
             map.setStyle(makeStyleUrl(parent.getItemAtPosition(pos).toString()))
         }

@@ -49,6 +49,8 @@ class CustomStyleActivity: AppCompatActivity() {
         mapView?.getMapAsync { map ->
             map.setStyle(makeStyleUrl()) {
                 // Map fully loaded in this scope.
+                //Attributions position
+                map.uiSettings.setAttributionMargins(15,0,0,15)
             }
         }
     }

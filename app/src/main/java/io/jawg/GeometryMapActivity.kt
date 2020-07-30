@@ -37,6 +37,9 @@ class GeometryMapActivity : AppCompatActivity() {
 
             map.setStyle(makeStyleUrl()) {
                 // Map fully loaded in this scope.
+                //Attributions position
+                map.uiSettings.setAttributionMargins(15,0,0,15)
+
                 // We create a GeoJSON polygon containing the coordinates we want to be parsed into a feature.
                 val polygonFeatureJson =
                     """
