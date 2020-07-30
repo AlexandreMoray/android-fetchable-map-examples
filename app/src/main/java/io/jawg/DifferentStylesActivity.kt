@@ -8,6 +8,7 @@ import android.widget.Spinner
 import androidx.appcompat.app.AppCompatActivity
 import com.mapbox.mapboxsdk.Mapbox
 import com.mapbox.mapboxsdk.maps.MapView
+import com.mapbox.mapboxsdk.maps.UiSettings
 import kotlinx.android.synthetic.main.activity_different_styles.*
 
 class DifferentStylesActivity: AppCompatActivity(), AdapterView.OnItemSelectedListener {
@@ -56,6 +57,9 @@ class DifferentStylesActivity: AppCompatActivity(), AdapterView.OnItemSelectedLi
             // We udate the map style using the value selected from the spinner.
             map.setStyle(makeStyleUrl(parent.getItemAtPosition(pos).toString())) {
                 // Map fully loaded in this scope.
+                //Attributions position
+                map.uiSettings.setAttributionMargins(15,0,0,15)
+
             }
         }
     }

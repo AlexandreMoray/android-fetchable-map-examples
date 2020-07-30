@@ -39,7 +39,8 @@ class MarkerMapActivity: AppCompatActivity(){
 
             map.setStyle(makeStyleUrl()) { style ->
                 // Map fully loaded in this scope.
-
+                //Attributions position
+                map.uiSettings.setAttributionMargins(15,0,0,15)
                 // Choose logo to display
                 val selectedMarkerIconDrawable = ResourcesCompat.getDrawable(this.resources, R.drawable.ic_jawg_marker, null)
                 style.addImage(MARKER_ICON, BitmapUtils.getBitmapFromDrawable(selectedMarkerIconDrawable)!!)
